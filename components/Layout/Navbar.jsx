@@ -31,7 +31,7 @@ const NavBar = () => {
       sm:pl-36
       ${
         scrolled
-          ? 'bg-sky-800/60 animation-spin text-slate-200'
+          ? 'bg-gray-900/90 animation-spin text-slate-200'
           : 'bg-transparent subtitle animation-spin'
       }    
       `,
