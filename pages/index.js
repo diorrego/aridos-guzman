@@ -4,7 +4,16 @@ import Image from 'next/image';
 
 import Layout from '../components/Layout';
 
-import test from '../public/test.jpg';
+import uno from '../public/uno.jpg';
+import dos from '../public/dos.jpg';
+import tres from '../public/tres.jpg';
+import cuatro from '../public/cuatro.jpg';
+import cinco from '../public/cinco.jpg';
+import seis from '../public/seis.jpg';
+import siete from '../public/siete.jpg';
+import ocho from '../public/ocho.jpg';
+import nueve from '../public/nueve.jpg';
+import diez from '../public/diez.jpg';
 
 export default function Home() {
   return (
@@ -19,7 +28,9 @@ export default function Home() {
           <h1 className="text-4xl sm:text-5xl font-semibold">Áridos Guzmán</h1>
           <p className="text-xl sm:text-2xl">Calidad, confianza y bienestar.</p>
         </div>
-        <Image src={test} alt="test" />
+        <div className="sm:w-3/6">
+          <Image src={uno} alt="Áridos Guzmán" />
+        </div>
       </section>
 
       <section className="flex flex-col sm:flex-row items-center justify-around py-8 bg-sky-800 px-4 sm:px-0 text-slate-200">
@@ -33,18 +44,18 @@ export default function Home() {
             cumplir con las expectativas de sus clientes.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-x-1">
+        <div className="grid grid-cols-2 gap-x-1 overflow-hidden">
           <div className="sm:w-96">
-            <Image src={test} alt="test" />
+            <Image src={dos} alt="Áridos Guzmán" />
           </div>
           <div className="sm:w-96">
-            <Image src={test} alt="test" />
+            <Image src={tres} alt="Áridos Guzmán" />
           </div>
           <div className="sm:w-96">
-            <Image src={test} alt="test" />
+            <Image src={diez} alt="Áridos Guzmán" />
           </div>
           <div className="sm:w-96">
-            <Image src={test} alt="test" />
+            <Image src={cinco} alt="Áridos Guzmán" />
           </div>
         </div>
       </section>
@@ -52,16 +63,16 @@ export default function Home() {
       <section className="flex flex-col-reverse sm:flex-row items-center justify-center sm:space-x-16 py-8 px-4 sm:px-0">
         <div className="grid grid-cols-2 gap-x-1">
           <div className="sm:w-96">
-            <Image src={test} alt="test" />
+            <Image src={seis} alt="Áridos Guzmán" />
           </div>
           <div className="sm:w-96">
-            <Image src={test} alt="test" />
+            <Image src={siete} alt="Áridos Guzmán" />
           </div>
           <div className="sm:w-96">
-            <Image src={test} alt="test" />
+            <Image src={ocho} alt="Áridos Guzmán" />
           </div>
           <div className="sm:w-96">
-            <Image src={test} alt="test" />
+            <Image src={nueve} alt="Áridos Guzmán" />
           </div>
         </div>
         <div className="flex flex-col space-y-6 sm:w-[35rem] mb-8 sm:mb-0">
@@ -100,7 +111,9 @@ export default function Home() {
             Un gran equipo humano al servicio de la industria.
           </p>
         </div>
-        <Image src={test} alt="test" />
+        <div className="sm:w-3/6">
+          <Image src={cuatro} alt="Áridos Guzmán" />
+        </div>
       </section>
     </Layout>
   );
